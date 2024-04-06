@@ -18,6 +18,9 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col">
+      <h2 className="text-center text-4xl text-blue-950 mb-5 mt-2 font-semibold">
+        Users Dashboard
+      </h2>
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
           <div className="overflow-hidden">

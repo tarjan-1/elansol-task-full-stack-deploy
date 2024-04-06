@@ -15,10 +15,13 @@ const useLogin = () => {
     }
 
     try {
-      const result = await axios.post(`/api/v1/users/login`, {
-        email,
-        password,
-      });
+      const result = await axios.post(
+        `http://localhost:5500/api/v1/users/login`,
+        {
+          email,
+          password,
+        }
+      );
 
       const response = result.data;
 
