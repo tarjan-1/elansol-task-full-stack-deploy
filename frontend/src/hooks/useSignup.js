@@ -22,15 +22,12 @@ const useSignup = () => {
     }
 
     try {
-      const response = await axios.post(
-        `http://localhost:5500/api/v1/users/signup`,
-        {
-          name,
-          dob,
-          email,
-          password,
-        }
-      );
+      const response = await axios.post(`/api/v1/users/signup`, {
+        name,
+        dob,
+        email,
+        password,
+      });
 
       const data = response.data;
       console.log(data);
